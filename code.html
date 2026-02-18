@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Maciel Perfumaria - Essência da Elegância</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#372822",
+                        secondary: "#815141",
+                        accent: "#C38871",
+                        soft: "#EBBBA2",
+                        "background-light": "#F9ECE3",
+                        "background-dark": "#1a1614",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2c2420",
+                        "subtle-light": "#F3F0EE",
+                        "subtle-dark": "#261e1b",
+                    },
+                    fontFamily: {
+                        display: ["'Playfair Display'", "serif"],
+                        body: ["'Montserrat'", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-primary dark:text-subtle-light font-body transition-colors duration-300 antialiased selection:bg-accent selection:text-white">
+    <div
+        class="bg-accent dark:bg-secondary text-white text-[10px] md:text-xs font-medium py-2 border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex gap-4">
+                <a class="text-subtle-light hover:text-primary transition-colors" href="#"><i
+                        class="fa-brands fa-facebook text-sm"></i></a>
+                <a class="text-subtle-light hover:text-primary transition-colors" href="#"><i
+                        class="fa-brands fa-instagram text-sm"></i></a>
+                <a class="text-subtle-light hover:text-primary transition-colors" href="#"><i
+                        class="fa-brands fa-whatsapp text-sm"></i></a>
+            </div>
+            <div class="text-center tracking-widest uppercase flex-1">
+                Frete Grátis para todo o Brasil acima de R$ 399
+            </div>
+            <div class="flex items-center gap-2">
+                <a class="hover:text-primary transition-colors uppercase tracking-wide" href="#">Login</a>
+                <span>/</span>
+                <a class="hover:text-primary transition-colors uppercase tracking-wide" href="#">Criar Conta</a>
+            </div>
+        </div>
+    </div>
+    <header
+        class="sticky top-0 z-50 bg-white dark:bg-background-dark/95 backdrop-blur-md border-b border-secondary/10 dark:border-white/10 shadow-sm">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-6 w-1/3">
+                <button
+                    class="text-primary dark:text-white hover:text-secondary dark:hover:text-accent transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+            <div class="w-1/3 flex justify-center text-center flex-col">
+                <a href="#"><img alt="Maciel Perfumaria" class="h-15 w-auto mx-auto" src="maciel-perfumaria.svg" /></a>
+            </div>
+            <div class="flex items-center justify-end gap-6 w-1/3">
+                <button
+                    class="text-primary dark:text-white hover:text-secondary dark:hover:text-accent transition-colors">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <button
+                    class="relative text-primary dark:text-white hover:text-secondary dark:hover:text-accent transition-colors">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span
+                        class="absolute -top-1 -right-1 bg-accent text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">2</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section
+        class="relative w-full h-[65vh] md:h-[75vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+        style="background-image: url('bg-hero-maciel.jpg');">
+        <div class="absolute inset-0 bg-[#F9ECE3]/50"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="mb-6 animate-fade-in-up">
+                <span
+                    class="text-secondary dark:text-accent uppercase tracking-[0.3em] text-xs font-bold border-b border-secondary/30 pb-1">Nova
+                    Coleção</span>
+            </div>
+            <h1
+                class="font-display text-6xl md:text-7xl lg:text-8xl text-primary dark:text-subtle-light mb-8 leading-tight">
+                Essência da <br /> <span class="italic text-secondary dark:text-accent">Elegância</span>
+            </h1>
+            <p
+                class="font-body text-secondary dark:text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto font-light leading-relaxed">
+                Descubra fragrâncias exclusivas que capturam momentos inesquecíveis e definem sua presença.
+            </p>
+            <a class="inline-block bg-primary text-white hover:bg-secondary dark:hover:bg-accent transition-all duration-300 px-12 py-4 rounded-full font-medium tracking-widest text-xs uppercase transform hover:-translate-y-1 shadow-xl shadow-primary/10 dark:shadow-black/40"
+                href="#">
+                Ver Coleção
+            </a>
+        </div>
+    </section>
+    <div class="bg-primary text-white py-6 md:py-8 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-symbols-outlined text-3xl text-accent">local_shipping</span>
+                    <span class="text-xs md:text-sm font-medium tracking-wide">Entrega em todo Brasil</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-symbols-outlined text-3xl text-accent">verified</span>
+                    <span class="text-xs md:text-sm font-medium tracking-wide">Produtos 100% Originais</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-symbols-outlined text-3xl text-accent">lock</span>
+                    <span class="text-xs md:text-sm font-medium tracking-wide">Segurança: Loja 100% Segura</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-symbols-outlined text-3xl text-accent">credit_card</span>
+                    <span class="text-xs md:text-sm font-medium tracking-wide">Parcelamento em até 10x</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-12 md:py-16 bg-white dark:bg-[#1f1a18]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 justify-center items-center">
+                <a class="group flex flex-col items-center gap-4 cursor-pointer" href="#">
+                    <div
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-full border-[3px] border-accent p-1 overflow-hidden transition-transform transform group-hover:scale-105">
+                        <img alt="Decants"
+                            class="w-full h-full object-cover rounded-full mix-blend-multiply dark:mix-blend-normal bg-subtle-light dark:bg-card-dark"
+                            src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=300&auto=format&fit=crop" />
+                    </div>
+                    <span
+                        class="uppercase tracking-widest text-xs font-bold text-primary dark:text-white group-hover:text-accent transition-colors font-body">Decants</span>
+                </a>
+                <a class="group flex flex-col items-center gap-4 cursor-pointer" href="#">
+                    <div
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-full border-[3px] border-accent p-1 overflow-hidden transition-transform transform group-hover:scale-105">
+                        <img alt="Masculino"
+                            class="w-full h-full object-cover rounded-full mix-blend-multiply dark:mix-blend-normal bg-subtle-light dark:bg-card-dark"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzLGaFaLKnWX8G_SiEf7T4OGUdTYxkoM-W3HT48z7I1q8jTbZcB6mu3nWJ_-YZUPfXbzoPKA6Lca9DlTrVDaHEPYCh9Q-AB9xhAPr1ckBEHIPDKWw2zVyYH6OUNY9cWXWgnZ0Y3tiuKQ1Oq6XTH5HLbE-cXaK5KKYUfjNc-eStjNpIaHONM9NwOe12w4_CuTR1cyvIoU20rudfYmcBtZacBF3elfgwa4KmHTgJKANjz0uKfXX8mbafzOMoTu2V4H2zeOTuse4z2o" />
+                    </div>
+                    <span
+                        class="uppercase tracking-widest text-xs font-bold text-primary dark:text-white group-hover:text-accent transition-colors font-body">Masculino</span>
+                </a>
+                <a class="group flex flex-col items-center gap-4 cursor-pointer" href="#">
+                    <div
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-full border-[3px] border-accent p-1 overflow-hidden transition-transform transform group-hover:scale-105">
+                        <img alt="Feminino"
+                            class="w-full h-full object-cover rounded-full mix-blend-multiply dark:mix-blend-normal bg-subtle-light dark:bg-card-dark"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbnYpthnLYWJr55T85N_W0m6dtp2FPoXqtNguUC_ZCUo76JmVDvA0QDe4nU7nBrDVQrUgC8IIyoUSkh95ULEYYbmsuoJkQVBrIZewYLYNjjyYJbVFm66SRiqEyh4741lqtPDnm0lJM6hSLGziffrpe3cO63lq_F87zLfxyeGRUu9h7NeT73PcTAVarPdJa0UJa_1nzqIQFizVhO6bluhi3FRkwucsuWawNb_Y10kudA8lFPBaUqZVUSu6buODpZMjC7Kb81ZryCE" />
+                    </div>
+                    <span
+                        class="uppercase tracking-widest text-xs font-bold text-primary dark:text-white group-hover:text-accent transition-colors font-body">Feminino</span>
+                </a>
+                <a class="group flex flex-col items-center gap-4 cursor-pointer" href="#">
+                    <div
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-full border-[3px] border-accent p-1 overflow-hidden transition-transform transform group-hover:scale-105">
+                        <img alt="Infantil"
+                            class="w-full h-full object-cover rounded-full mix-blend-multiply dark:mix-blend-normal bg-subtle-light dark:bg-card-dark"
+                            src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=300&auto=format&fit=crop" />
+                    </div>
+                    <span
+                        class="uppercase tracking-widest text-xs font-bold text-primary dark:text-white group-hover:text-accent transition-colors font-body">Infantil</span>
+                </a>
+                <a class="group flex flex-col items-center gap-4 cursor-pointer text-center" href="#">
+                    <div
+                        class="w-24 h-24 md:w-32 md:h-32 rounded-full border-[3px] border-accent p-1 overflow-hidden transition-transform transform group-hover:scale-105 mx-auto">
+                        <img alt="Corpo e Banho"
+                            class="w-full h-full object-cover rounded-full mix-blend-multiply dark:mix-blend-normal bg-subtle-light dark:bg-card-dark"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzLGaFaLKnWX8G_SiEf7T4OGUdTYxkoM-W3HT48z7I1q8jTbZcB6mu3nWJ_-YZUPfXbzoPKA6Lca9DlTrVDaHEPYCh9Q-AB9xhAPr1ckBEHIPDKWw2zVyYH6OUNY9cWXWgnZ0Y3tiuKQ1Oq6XTH5HLbE-cXaK5KKYUfjNc-eStjNpIaHONM9NwOe12w4_CuTR1cyvIoU20rudfYmcBtZacBF3elfgwa4KmHTgJKANjz0uKfXX8mbafzOMoTu2V4H2zeOTuse4z2o" />
+                    </div>
+                    <span
+                        class="uppercase tracking-widest text-xs font-bold text-primary dark:text-white group-hover:text-accent transition-colors font-body text-center block max-w-[120px] whitespace-nowrap">Corpo
+                        e Banho</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-subtle-light dark:bg-[#181513]">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-2 block">Novidades</span>
+                    <h2 class="font-display text-3xl md:text-4xl text-primary dark:text-white">Lançamentos</h2>
+                </div>
+                <a class="hidden md:block text-xs font-bold uppercase tracking-widest text-primary dark:text-white hover:text-accent transition-colors border-b border-primary dark:border-white pb-1"
+                    href="#">Ver Todos</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="group flex flex-col bg-white dark:bg-card-dark rounded-sm p-4 hover:shadow-lg transition-all duration-300 relative border border-transparent hover:border-accent/20">
+                    <div
+                        class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">
+                        Novo</div>
+                    <div class="h-64 flex items-center justify-center mb-4 overflow-hidden relative">
+                        <img alt="Perfume bottle"
+                            class="h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMQfpEMbzd0BTXrN2Fa_zxZyuFh7YSmVzuKxX3vRXClIPOn2cMZUUkUX3DALYVpuxcGLfxa0wft5pFcp0BNuJGDntymcDtxYCafzYmNaPNUfw8z7cRwss1yCDWfcB4YxspPBkFgXo5I4mFCR54Pc-GodHIpb_P4AJ2NZ6H8Sh-GYJW_QE_nezNTlQOuee1WImQdLdbvbtPGvMXfUmkZRcQArUq99jHHVvlx_a9_JAPymv66iT2KIimbXIpUDfcSQO9iK1qcM-ngyk" />
+                        <button
+                            class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 bg-white/90 dark:bg-black/80 backdrop-blur text-primary dark:text-white shadow-lg rounded-full p-2 transition-all duration-300">
+                            <span class="material-symbols-outlined text-lg">visibility</span>
+                        </button>
+                    </div>
+                    <div class="mt-auto">
+                        <h3 class="font-display text-lg text-primary dark:text-white mb-1">Givenchy Irresistible</h3>
+                        <p class="text-secondary/70 dark:text-gray-400 text-xs mb-2">Eau de Parfum - 50ml</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <span class="text-lg font-bold text-primary dark:text-white">R$ 649,00</span>
+                            <button class="text-accent hover:text-primary dark:hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group flex flex-col bg-white dark:bg-card-dark rounded-sm p-4 hover:shadow-lg transition-all duration-300 relative border border-transparent hover:border-accent/20">
+                    <div class="h-64 flex items-center justify-center mb-4 overflow-hidden relative">
+                        <img alt="Perfume bottle"
+                            class="h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzLGaFaLKnWX8G_SiEf7T4OGUdTYxkoM-W3HT48z7I1q8jTbZcB6mu3nWJ_-YZUPfXbzoPKA6Lca9DlTrVDaHEPYCh9Q-AB9xhAPr1ckBEHIPDKWw2zVyYH6OUNY9cWXWgnZ0Y3tiuKQ1Oq6XTH5HLbE-cXaK5KKYUfjNc-eStjNpIaHONM9NwOe12w4_CuTR1cyvIoU20rudfYmcBtZacBF3elfgwa4KmHTgJKANjz0uKfXX8mbafzOMoTu2V4H2zeOTuse4z2o" />
+                        <button
+                            class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 bg-white/90 dark:bg-black/80 backdrop-blur text-primary dark:text-white shadow-lg rounded-full p-2 transition-all duration-300">
+                            <span class="material-symbols-outlined text-lg">visibility</span>
+                        </button>
+                    </div>
+                    <div class="mt-auto">
+                        <h3 class="font-display text-lg text-primary dark:text-white mb-1">Burberry Body</h3>
+                        <p class="text-secondary/70 dark:text-gray-400 text-xs mb-2">Eau de Parfum - 85ml</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <span class="text-lg font-bold text-primary dark:text-white">R$ 494,00</span>
+                            <button class="text-accent hover:text-primary dark:hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group flex flex-col bg-white dark:bg-card-dark rounded-sm p-4 hover:shadow-lg transition-all duration-300 relative border border-transparent hover:border-accent/20">
+                    <div
+                        class="absolute top-3 left-3 bg-soft text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">
+                        Exclusivo</div>
+                    <div class="h-64 flex items-center justify-center mb-4 overflow-hidden relative">
+                        <img alt="Perfume bottle"
+                            class="h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbnYpthnLYWJr55T85N_W0m6dtp2FPoXqtNguUC_ZCUo76JmVDvA0QDe4nU7nBrDVQrUgC8IIyoUSkh95ULEYYbmsuoJkQVBrIZewYLYNjjyYJbVFm66SRiqEyh4741lqtPDnm0lJM6hSLGziffrpe3cO63lq_F87zLfxyeGRUu9h7NeT73PcTAVarPdJa0UJa_1nzqIQFizVhO6bluhi3FRkwucsuWawNb_Y10kudA8lFPBaUqZVUSu6buODpZMjC7Kb81ZryCE" />
+                        <button
+                            class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 bg-white/90 dark:bg-black/80 backdrop-blur text-primary dark:text-white shadow-lg rounded-full p-2 transition-all duration-300">
+                            <span class="material-symbols-outlined text-lg">visibility</span>
+                        </button>
+                    </div>
+                    <div class="mt-auto">
+                        <h3 class="font-display text-lg text-primary dark:text-white mb-1">Chloé Nomade</h3>
+                        <p class="text-secondary/70 dark:text-gray-400 text-xs mb-2">Eau de Parfum - 50ml</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <span class="text-lg font-bold text-primary dark:text-white">R$ 580,00</span>
+                            <button class="text-accent hover:text-primary dark:hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group flex flex-col bg-white dark:bg-card-dark rounded-sm p-4 hover:shadow-lg transition-all duration-300 relative border border-transparent hover:border-accent/20">
+                    <div class="h-64 flex items-center justify-center mb-4 overflow-hidden relative">
+                        <img alt="Perfume bottle"
+                            class="h-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBBJ3Y2NLsilVlDMwb4IU10k8LLrggvGQtBELyfpE3ZlSl6xW1JE3RlJB5Qw6D9G-n8eqUU0fjpsMFjW5NjCj9t-yE-ooJHOk41z24QDkLBgTH7bNecPHoJlDSKRsdKwuxjCr_iN5mBmnXzcuG8wiAtkZEybMzxzhnCVGPQvDipRVHA2Uqf8ciqm7BM42l2BmemfY14yfytxO8vnyGqx0RWeNUjW1bTnwurfqXWhbDl_wQLSagd0a9I6GR0sFaszF5BJ-n8UyytJU" />
+                        <button
+                            class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 bg-white/90 dark:bg-black/80 backdrop-blur text-primary dark:text-white shadow-lg rounded-full p-2 transition-all duration-300">
+                            <span class="material-symbols-outlined text-lg">visibility</span>
+                        </button>
+                    </div>
+                    <div class="mt-auto">
+                        <h3 class="font-display text-lg text-primary dark:text-white mb-1">Chloé Signature</h3>
+                        <p class="text-secondary/70 dark:text-gray-400 text-xs mb-2">L'Absolu - 50ml</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <span class="text-lg font-bold text-primary dark:text-white">R$ 720,00</span>
+                            <button class="text-accent hover:text-primary dark:hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 md:hidden">
+                <a class="text-xs font-bold uppercase tracking-widest text-primary dark:text-white hover:text-accent transition-colors border-b border-primary dark:border-white pb-1"
+                    href="#">Ver Todos</a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-subtle-light dark:bg-[#231e1c] py-16 md:py-24 overflow-hidden">
+        <div class="container mx-auto px-6 relative">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-left z-10 mb-8 md:mb-0 pl-4 md:pl-12">
+                    <span class="block text-accent uppercase tracking-[0.3em] text-xs font-bold mb-4">Oferta
+                        Especial</span>
+                    <h2 class="font-display text-4xl md:text-6xl text-primary dark:text-white mb-6 leading-tight">
+                        PROMOÇÃO <br /> <span class="italic font-light">ATÉ 50% OFF</span>
+                    </h2>
+                    <p class="text-secondary/80 dark:text-gray-300 mb-8 max-w-md font-light leading-relaxed">
+                        Seleção exclusiva de perfumes importados com descontos imperdíveis. Renove sua assinatura
+                        olfativa.
+                    </p>
+                    <a class="inline-block bg-primary text-white hover:bg-secondary dark:hover:bg-accent transition-all duration-300 px-10 py-4 rounded-full font-medium tracking-widest text-xs uppercase"
+                        href="#">
+                        Aproveitar Ofertas
+                    </a>
+                </div>
+                <div class="md:w-1/2 relative h-[300px] md:h-[400px] w-full flex justify-center md:justify-end">
+                    <div
+                        class="absolute top-1/2 left-1/2 md:left-2/3 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-soft/20 rounded-full blur-3xl z-0">
+                    </div>
+                    <img alt="Promotion Perfume"
+                        class="relative z-10 h-full object-contain mix-blend-darken dark:mix-blend-normal opacity-90 drop-shadow-2xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbnYpthnLYWJr55T85N_W0m6dtp2FPoXqtNguUC_ZCUo76JmVDvA0QDe4nU7nBrDVQrUgC8IIyoUSkh95ULEYYbmsuoJkQVBrIZewYLYNjjyYJbVFm66SRiqEyh4741lqtPDnm0lJM6hSLGziffrpe3cO63lq_F87zLfxyeGRUu9h7NeT73PcTAVarPdJa0UJa_1nzqIQFizVhO6bluhi3FRkwucsuWawNb_Y10kudA8lFPBaUqZVUSu6buODpZMjC7Kb81ZryCE" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 md:py-20 bg-white dark:bg-background-dark">
+        <div class="container mx-auto px-6">
+            <div class="mb-20">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl md:text-4xl text-primary dark:text-white mb-3">Mais Procurados</h2>
+                    <div class="w-16 h-0.5 bg-accent mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="flex items-center gap-4 bg-background-light/30 dark:bg-card-dark/30 p-4 rounded hover:bg-background-light dark:hover:bg-card-dark transition-colors group">
+                        <div class="w-24 h-24 flex-shrink-0 bg-white dark:bg-white/5 rounded p-2">
+                            <img alt="Perfume"
+                                class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzLGaFaLKnWX8G_SiEf7T4OGUdTYxkoM-W3HT48z7I1q8jTbZcB6mu3nWJ_-YZUPfXbzoPKA6Lca9DlTrVDaHEPYCh9Q-AB9xhAPr1ckBEHIPDKWw2zVyYH6OUNY9cWXWgnZ0Y3tiuKQ1Oq6XTH5HLbE-cXaK5KKYUfjNc-eStjNpIaHONM9NwOe12w4_CuTR1cyvIoU20rudfYmcBtZacBF3elfgwa4KmHTgJKANjz0uKfXX8mbafzOMoTu2V4H2zeOTuse4z2o" />
+                        </div>
+                        <div>
+                            <h4
+                                class="font-display text-lg text-primary dark:text-white group-hover:text-accent transition-colors">
+                                Burberry Body Intense</h4>
+                            <p class="text-xs text-secondary/60 dark:text-gray-400 mb-2">Parfum Water</p>
+                            <span class="font-bold text-primary dark:text-white">R$ 494,00</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-background-light/30 dark:bg-card-dark/30 p-4 rounded hover:bg-background-light dark:hover:bg-card-dark transition-colors group">
+                        <div class="w-24 h-24 flex-shrink-0 bg-white dark:bg-white/5 rounded p-2">
+                            <img alt="Perfume"
+                                class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMQfpEMbzd0BTXrN2Fa_zxZyuFh7YSmVzuKxX3vRXClIPOn2cMZUUkUX3DALYVpuxcGLfxa0wft5pFcp0BNuJGDntymcDtxYCafzYmNaPNUfw8z7cRwss1yCDWfcB4YxspPBkFgXo5I4mFCR54Pc-GodHIpb_P4AJ2NZ6H8Sh-GYJW_QE_nezNTlQOuee1WImQdLdbvbtPGvMXfUmkZRcQArUq99jHHVvlx_a9_JAPymv66iT2KIimbXIpUDfcSQO9iK1qcM-ngyk" />
+                        </div>
+                        <div>
+                            <h4
+                                class="font-display text-lg text-primary dark:text-white group-hover:text-accent transition-colors">
+                                Givenchy Irresistible</h4>
+                            <p class="text-xs text-secondary/60 dark:text-gray-400 mb-2">Eau de Parfum</p>
+                            <span class="font-bold text-primary dark:text-white">R$ 649,00</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 bg-background-light/30 dark:bg-card-dark/30 p-4 rounded hover:bg-background-light dark:hover:bg-card-dark transition-colors group">
+                        <div class="w-24 h-24 flex-shrink-0 bg-white dark:bg-white/5 rounded p-2">
+                            <img alt="Perfume"
+                                class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbnYpthnLYWJr55T85N_W0m6dtp2FPoXqtNguUC_ZCUo76JmVDvA0QDe4nU7nBrDVQrUgC8IIyoUSkh95ULEYYbmsuoJkQVBrIZewYLYNjjyYJbVFm66SRiqEyh4741lqtPDnm0lJM6hSLGziffrpe3cO63lq_F87zLfxyeGRUu9h7NeT73PcTAVarPdJa0UJa_1nzqIQFizVhO6bluhi3FRkwucsuWawNb_Y10kudA8lFPBaUqZVUSu6buODpZMjC7Kb81ZryCE" />
+                        </div>
+                        <div>
+                            <h4
+                                class="font-display text-lg text-primary dark:text-white group-hover:text-accent transition-colors">
+                                Chloé Nomade</h4>
+                            <p class="text-xs text-secondary/60 dark:text-gray-400 mb-2">Eau de Parfum</p>
+                            <span class="font-bold text-primary dark:text-white">R$ 580,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl md:text-4xl text-primary dark:text-white mb-3">Em Promoção</h2>
+                    <div class="w-16 h-0.5 bg-accent mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group text-center">
+                        <div class="relative mb-4 bg-subtle-light dark:bg-card-dark rounded-sm p-6 overflow-hidden">
+                            <span
+                                class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-2 py-1">-20%</span>
+                            <img alt="Perfume"
+                                class="h-48 w-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBBJ3Y2NLsilVlDMwb4IU10k8LLrggvGQtBELyfpE3ZlSl6xW1JE3RlJB5Qw6D9G-n8eqUU0fjpsMFjW5NjCj9t-yE-ooJHOk41z24QDkLBgTH7bNecPHoJlDSKRsdKwuxjCr_iN5mBmnXzcuG8wiAtkZEybMzxzhnCVGPQvDipRVHA2Uqf8ciqm7BM42l2BmemfY14yfytxO8vnyGqx0RWeNUjW1bTnwurfqXWhbDl_wQLSagd0a9I6GR0sFaszF5BJ-n8UyytJU" />
+                        </div>
+                        <h3 class="font-display text-lg text-primary dark:text-white">Chloé Signature</h3>
+                        <div class="flex justify-center items-baseline gap-2 mt-2">
+                            <span class="text-xs line-through text-secondary/40 dark:text-gray-600">R$ 900,00</span>
+                            <span class="text-base font-bold text-accent">R$ 720,00</span>
+                        </div>
+                    </div>
+                    <div class="group text-center">
+                        <div class="relative mb-4 bg-subtle-light dark:bg-card-dark rounded-sm p-6 overflow-hidden">
+                            <span
+                                class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-2 py-1">-10%</span>
+                            <img alt="Perfume"
+                                class="h-48 w-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzLGaFaLKnWX8G_SiEf7T4OGUdTYxkoM-W3HT48z7I1q8jTbZcB6mu3nWJ_-YZUPfXbzoPKA6Lca9DlTrVDaHEPYCh9Q-AB9xhAPr1ckBEHIPDKWw2zVyYH6OUNY9cWXWgnZ0Y3tiuKQ1Oq6XTH5HLbE-cXaK5KKYUfjNc-eStjNpIaHONM9NwOe12w4_CuTR1cyvIoU20rudfYmcBtZacBF3elfgwa4KmHTgJKANjz0uKfXX8mbafzOMoTu2V4H2zeOTuse4z2o" />
+                        </div>
+                        <h3 class="font-display text-lg text-primary dark:text-white">Burberry Body</h3>
+                        <div class="flex justify-center items-baseline gap-2 mt-2">
+                            <span class="text-xs line-through text-secondary/40 dark:text-gray-600">R$ 548,00</span>
+                            <span class="text-base font-bold text-accent">R$ 494,00</span>
+                        </div>
+                    </div>
+                    <div class="group text-center">
+                        <div class="relative mb-4 bg-subtle-light dark:bg-card-dark rounded-sm p-6 overflow-hidden">
+                            <span
+                                class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-2 py-1">-15%</span>
+                            <img alt="Perfume"
+                                class="h-48 w-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASbnYpthnLYWJr55T85N_W0m6dtp2FPoXqtNguUC_ZCUo76JmVDvA0QDe4nU7nBrDVQrUgC8IIyoUSkh95ULEYYbmsuoJkQVBrIZewYLYNjjyYJbVFm66SRiqEyh4741lqtPDnm0lJM6hSLGziffrpe3cO63lq_F87zLfxyeGRUu9h7NeT73PcTAVarPdJa0UJa_1nzqIQFizVhO6bluhi3FRkwucsuWawNb_Y10kudA8lFPBaUqZVUSu6buODpZMjC7Kb81ZryCE" />
+                        </div>
+                        <h3 class="font-display text-lg text-primary dark:text-white">Chloé Nomade</h3>
+                        <div class="flex justify-center items-baseline gap-2 mt-2">
+                            <span class="text-xs line-through text-secondary/40 dark:text-gray-600">R$ 682,00</span>
+                            <span class="text-base font-bold text-accent">R$ 580,00</span>
+                        </div>
+                    </div>
+                    <div class="group text-center">
+                        <div class="relative mb-4 bg-subtle-light dark:bg-card-dark rounded-sm p-6 overflow-hidden">
+                            <span
+                                class="absolute top-2 left-2 bg-secondary text-white text-[10px] font-bold px-2 py-1">-5%</span>
+                            <img alt="Perfume"
+                                class="h-48 w-full object-contain group-hover:scale-105 transition-transform duration-500 mix-blend-multiply dark:mix-blend-normal"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMQfpEMbzd0BTXrN2Fa_zxZyuFh7YSmVzuKxX3vRXClIPOn2cMZUUkUX3DALYVpuxcGLfxa0wft5pFcp0BNuJGDntymcDtxYCafzYmNaPNUfw8z7cRwss1yCDWfcB4YxspPBkFgXo5I4mFCR54Pc-GodHIpb_P4AJ2NZ6H8Sh-GYJW_QE_nezNTlQOuee1WImQdLdbvbtPGvMXfUmkZRcQArUq99jHHVvlx_a9_JAPymv66iT2KIimbXIpUDfcSQO9iK1qcM-ngyk" />
+                        </div>
+                        <h3 class="font-display text-lg text-primary dark:text-white">Givenchy Irresistible</h3>
+                        <div class="flex justify-center items-baseline gap-2 mt-2">
+                            <span class="text-xs line-through text-secondary/40 dark:text-gray-600">R$ 683,00</span>
+                            <span class="text-base font-bold text-accent">R$ 649,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-background-light dark:bg-[#1a1614] border-y border-secondary/10 dark:border-white/5 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-around items-center gap-8 md:gap-4 text-center">
+                <div class="flex flex-col items-center">
+                    <span
+                        class="material-symbols-outlined text-4xl text-primary dark:text-white mb-3">rocket_launch</span>
+                    <h4 class="font-bold text-primary dark:text-white uppercase tracking-wide text-sm mb-1">Envio Rápido
+                    </h4>
+                    <p class="text-secondary text-xs">Para todo o território nacional</p>
+                </div>
+                <div class="w-px h-12 bg-secondary/10 hidden md:block"></div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-4xl text-primary dark:text-white mb-3">package_2</span>
+                    <h4 class="font-bold text-primary dark:text-white uppercase tracking-wide text-sm mb-1">Embalagem
+                        Segura</h4>
+                    <p class="text-secondary text-xs">Proteção total para seu produto</p>
+                </div>
+                <div class="w-px h-12 bg-secondary/10 hidden md:block"></div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-4xl text-primary dark:text-white mb-3">payments</span>
+                    <h4 class="font-bold text-primary dark:text-white uppercase tracking-wide text-sm mb-1">Desconto no
+                        PIX</h4>
+                    <p class="text-secondary text-xs">5% OFF em pagamentos à vista</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-20 bg-white dark:bg-background-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-20">
+                <span class="block text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4">Newsletter</span>
+                <h2 class="font-display text-3xl md:text-4xl text-primary dark:text-white mb-6">Cadastre-se para
+                    Exclusividade</h2>
+                <p class="text-secondary/80 dark:text-gray-400 mb-8 font-light">Receba novidades antecipadas, ofertas
+                    especiais e inspirações de beleza diretamente no seu e-mail.</p>
+                <form class="flex flex-col md:flex-row gap-4 relative">
+                    <input
+                        class="flex-1 bg-background-light dark:bg-subtle-dark border border-secondary/10 dark:border-white/10 text-primary dark:text-white px-6 py-4 rounded-full focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder:text-secondary/40 dark:placeholder:text-gray-600 font-light"
+                        placeholder="Seu melhor e-mail" type="email" />
+                    <button
+                        class="bg-primary text-white hover:bg-secondary dark:hover:bg-accent px-10 py-4 rounded-full uppercase tracking-widest text-xs font-bold transition-colors shadow-lg shadow-primary/20 dark:shadow-black/20"
+                        type="submit">
+                        Inscrever-se
+                    </button>
+                </form>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <h3 class="font-display text-2xl text-center text-primary dark:text-white mb-10">Perguntas Frequentes
+                </h3>
+                <div class="space-y-4">
+                    <div class="border-b border-secondary/10 dark:border-white/10 pb-4">
+                        <details class="group">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-primary dark:text-white">
+                                <span>Quais são as formas de pagamento?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-accent">expand_more</span>
+                                </span>
+                            </summary>
+                            <div
+                                class="text-secondary/80 dark:text-gray-400 mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                                Aceitamos cartões de crédito Visa, Mastercard, Elo e Amex em até 10x sem juros. Também
+                                aceitamos pagamentos via PIX com 5% de desconto.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="border-b border-secondary/10 dark:border-white/10 pb-4">
+                        <details class="group">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-primary dark:text-white">
+                                <span>Os produtos são originais?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-accent">expand_more</span>
+                                </span>
+                            </summary>
+                            <div
+                                class="text-secondary/80 dark:text-gray-400 mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                                Sim, todos os nossos produtos são 100% originais, adquiridos diretamente dos
+                                distribuidores oficiais das marcas no Brasil e possuem selo ADIPEC de garantia de
+                                procedência.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="border-b border-secondary/10 dark:border-white/10 pb-4">
+                        <details class="group">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-primary dark:text-white">
+                                <span>Qual o prazo de entrega?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-accent">expand_more</span>
+                                </span>
+                            </summary>
+                            <div
+                                class="text-secondary/80 dark:text-gray-400 mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                                O prazo de entrega varia de acordo com o seu CEP e a modalidade de envio escolhida. Você
+                                pode calcular o prazo exato na página do produto ou no carrinho de compras.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="border-b border-secondary/10 dark:border-white/10 pb-4">
+                        <details class="group">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-primary dark:text-white">
+                                <span>Posso trocar se não gostar?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-accent">expand_more</span>
+                                </span>
+                            </summary>
+                            <div
+                                class="text-secondary/80 dark:text-gray-400 mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                                Aceitamos trocas e devoluções em até 7 dias corridos após o recebimento, desde que o
+                                produto esteja lacrado em sua embalagem original e sem indícios de uso, conforme o
+                                Código de Defesa do Consumidor.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="border-b border-secondary/10 dark:border-white/10 pb-4">
+                        <details class="group">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-primary dark:text-white">
+                                <span>Como rastrear meu pedido?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined text-accent">expand_more</span>
+                                </span>
+                            </summary>
+                            <div
+                                class="text-secondary/80 dark:text-gray-400 mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                                Assim que seu pedido for enviado, você receberá um e-mail com o código de rastreamento.
+                                Você também pode acompanhar o status através da sua conta em nosso site.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#372822] text-background-light pt-20 pb-10 dark:border-t dark:border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <img alt="Maciel Perfumaria" class="h-17 mb-6" src="maciel-perfumaria.svg" />
+                    <p class="text-white/60 text-sm font-light leading-relaxed mb-6">
+                        Curadoria de fragrâncias de luxo para quem busca a essência da sofisticação e exclusividade em
+                        cada detalhe.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex gap-5">
+                            <a class="text-[#F9ECE3] hover:text-accent transition-colors border border-[#F9ECE3]/30 rounded-full p-2 flex items-center justify-center w-10 h-10"
+                                href="#"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                            <a class="text-[#F9ECE3] hover:text-accent transition-colors border border-[#F9ECE3]/30 rounded-full p-2 flex items-center justify-center w-10 h-10"
+                                href="#"><i class="fa-brands fa-instagram text-lg"></i></a>
+                            <a class="text-[#F9ECE3] hover:text-accent transition-colors border border-[#F9ECE3]/30 rounded-full p-2 flex items-center justify-center w-10 h-10"
+                                href="#"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-accent text-xs font-bold uppercase tracking-widest mb-6">Navegação</h4>
+                    <ul class="space-y-4 text-sm font-light text-white/70">
+                        <li><a class="hover:text-white transition-colors" href="#">Decants</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Masculino</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Feminino</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Infantil</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Corpo e Banho</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-accent text-xs font-bold uppercase tracking-widest mb-6">Institucional</h4>
+                    <ul class="space-y-4 text-sm font-light text-white/70">
+                        <li><a class="hover:text-white transition-colors" href="#">Sobre Nós</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Política de Privacidade</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Política de Trocas</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-accent text-xs font-bold uppercase tracking-widest mb-6">Atendimento</h4>
+                    <ul class="space-y-4 text-sm font-light text-white/70">
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-lg text-accent">mail</span>
+                            contato@macielperfumaria.com.br
+                        </li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-lg text-accent">call</span> (31) 99999-9999</li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-lg text-accent">location_on</span> Igarapé, MG
+                        </li>
+                        <li class="text-xs text-white/40 mt-4">Seg. à Sex. das 09h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-light gap-6">
+                <p>© 2024 Maciel Perfumaria. Todos os direitos reservados.</p>
+                <div class="flex items-center flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
+                    <div class="flex items-center gap-2" title="Mastercard">
+                        <div class="flex -space-x-1 items-center">
+                            <div class="w-3 h-3 rounded-full bg-white/20"></div>
+                            <div class="w-3 h-3 rounded-full bg-white/40"></div>
+                        </div>
+                        <span class="font-bold text-sm tracking-wide">Mastercard</span>
+                    </div>
+                    <div class="flex items-center gap-2" title="Visa">
+                        <span class="font-display font-bold text-lg italic tracking-tighter">Visa</span>
+                    </div>
+                    <div class="flex items-center gap-2" title="Elo">
+                        <div class="flex -space-x-1 items-center">
+                            <div class="w-3 h-3 rounded-full border border-white/40"></div>
+                            <div class="w-3 h-3 rounded-full border border-white/40"></div>
+                            <div class="w-3 h-3 rounded-full border border-white/40"></div>
+                        </div>
+                        <span class="font-display font-black text-lg lowercase tracking-tighter italic">elo</span>
+                    </div>
+                    <div class="flex items-center gap-2" title="Hipercard">
+                        <span
+                            class="font-bold text-sm uppercase tracking-wide border border-white/30 px-1 rounded-sm">Hipercard</span>
+                    </div>
+                    <div class="flex items-center gap-2" title="Pagamento via PIX">
+                        <span class="material-symbols-outlined text-xl">pix</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center justify-center"
+        href="#">
+        <svg class="bi bi-whatsapp" fill="currentColor" height="28" viewBox="0 0 16 16" width="28"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+            </path>
+        </svg>
+    </a>
+
+</body>
+
+</html>
